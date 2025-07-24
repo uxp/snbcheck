@@ -7,7 +7,7 @@ export default function Login() {
     const [isLoggedin, setIsLoggedin] = useState(false);
 
     const handleClick = () => {
-        const callbackUrl = `${window.location.origin}/`
+        const callbackUrl = `${window.location.origin + window.location.pathname}`
         const clientId = "za494vsn5kp152w0hm2el34acjlfww"
         const scopes = ["user:read:subscriptions", "user:read:email"]
         const scopeStr = scopes.map((i) =>
