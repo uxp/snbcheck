@@ -31,7 +31,7 @@ export default function Login() {
 
     useEffect(() => {
         if (isLoggedin) {
-            navigate("/secure");
+            navigate("/snbcheck/secure");
         }
     }, [isLoggedin, navigate]);
 
