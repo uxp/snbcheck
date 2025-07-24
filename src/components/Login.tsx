@@ -19,6 +19,13 @@ export default function Login() {
     };
 
     useEffect(() => {
+        const accessToken = Cookies.get("access_token");
+        if (accessToken) {
+            setIsLoggedin(true);
+        }
+    }, []);
+
+    useEffect(() => {
         const accessTokenRegex = /access_token=([^&]+)/;
         const isMatch = window.location.href.match(accessTokenRegex);
 
