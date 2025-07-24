@@ -92,7 +92,7 @@ export default function Secure() {
                     <div className="card">
                         <h1 className="broadcaster">{subDetails.broadcaster_name}</h1>
                         <p className="details">
-                            {`You have a ${subDetails.is_gift ? "gifted sub" : "paid"} subscription at ${subDetails.tier ? getTierString(subDetails.tier) : "..."}!!!`}
+                            {`You have a ${subDetails.is_gift ? "gifted" : "paid"} subscription at ${subDetails.tier ? getTierString(subDetails.tier) : "..."}!!!`}
                         </p>
                     </div>
                 </div>
